@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Boyz Automotive | Hyderabad</title>
+    <meta name="description" content="Boost Boyz Automotive, Hyderabad. Car servicing, repairs, diagnostics, electrical work, performance upgrades and body care for all car brands.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">
+            BOOST BOYZ
+            <span>AUTOMOTIVE</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Book Service</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO BOOST BOYZ AUTOMOTIVE</p>
+
+            <h1>
+                YOUR CAR.<br>
+                <span>OUR PRIORITY.</span>
+            </h1>
+
+            <p class="hero-description">
+                Servicing • Diagnostics • Repairs • Performance
+            </p>
+
+            <p class="tagline">YOUR DRIVE. OUR PASSION.</p>
+
+            <a href="#booking" class="btn">BOOK YOUR SERVICE ↗</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services section" id="services">
+        <p class="section-label">WHAT WE DO</p>
+        <h2>OUR <span>SERVICES</span></h2>
+        <p class="section-description">
+            Quality automotive care for all car brands.
+        </p>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>Servicing & Repairs</h3>
+                <p>General servicing and repair solutions to keep your car running smoothly.</p>
+                <div class="price">Contact for Price</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>Diagnostics & Coding</h3>
+                <p>Vehicle diagnostics and coding support to help identify technical issues.</p>
+                <div class="price">Contact for Price</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>Electrical Work</h3>
+                <p>Automotive electrical inspection, troubleshooting and repair.</p>
+                <div class="price">Contact for Price</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>Performance Upgrades</h3>
+                <p>Discuss suitable performance upgrades for your vehicle and requirements.</p>
+                <div class="price">Contact for Price</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>Denting, Painting & Body Care</h3>
+                <p>Bodywork and paint services to help restore your car's appearance.</p>
+                <div class="price">Contact for Price</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">06</div>
+                <h3>Wheel Alignment</h3>
+                <p>Wheel alignment service to support proper handling and tyre wear.</p>
+                <div class="price">Contact for Price</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking section" id="booking">
+        <p class="section-label">LET'S GET YOU MOVING</p>
+        <h2>BOOK A <span>SERVICE</span></h2>
+        <p class="section-description">
+            Enter your details and choose the service you need.
+        </p>
+
+        <form id="bookingForm">
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="customerName">Your Name *</label>
+                    <input type="text" id="customerName"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone"
+                           placeholder="Enter your phone number"
+                           pattern="[0-9 +()-]{10,18}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="carBrand">Car Brand *</label>
+                    <select id="carBrand" required>
+                        <option value="">Select car brand</option>
+                        <option>Maruti Suzuki</option>
+                        <option>Hyundai</option>
+                        <option>Tata</option>
+                        <option>Mahindra</option>
+                        <option>Toyota</option>
+                        <option>Honda</option>
+                        <option>Kia</option>
+                        <option>Volkswagen</option>
+                        <option>Skoda</option>
+                        <option>BMW</option>
+                        <option>Mercedes-Benz</option>
+                        <option>Audi</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="carModel">Car Model *</label>
+                    <input type="text" id="carModel"
+                           placeholder="e.g. Nexon, Swift, Creta" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Required Service *</label>
+                    <select id="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Servicing & Repairs</option>
+                        <option>Diagnostics & Coding</option>
+                        <option>Electrical Work</option>
+                        <option>Performance Upgrades</option>
+                        <option>Denting, Painting & Body Care</option>
+                        <option>Wheel Alignment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Additional Details</label>
+                <textarea id="details" rows="4"
+                    placeholder="Tell us about your car or the issue..."></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn">
+                SUBMIT BOOKING ↗
+            </button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+            <p class="form-note">
+                Your booking request will open in WhatsApp for you to send.
+            </p>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="logo footer-logo">
+            BOOST BOYZ
+            <span>AUTOMOTIVE</span>
+        </a>
+
+        <p class="footer-tagline">YOUR DRIVE. OUR PASSION.</p>
+        <p>Automotive services for all car brands.</p>
+        <p>Hyderabad, Telangana</p>
+
+        <p class="copyright">
+            © 2026 Boost Boyz Automotive. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
